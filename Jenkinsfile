@@ -1,9 +1,9 @@
 pipeline {
     agent any
     environment {
-        AWS_ACCOUNT_ID="759623136685"
-        AWS_DEFAULT_REGION="eu-west-2"
-        IMAGE_REPO_NAME="ecr-repoimg1"
+        AWS_ACCOUNT_ID="851725600699"
+        AWS_DEFAULT_REGION="us-east-1"
+        IMAGE_REPO_NAME="edeployment"
         IMAGE_TAG="v1"
         REPOSITORY_URI = "${AWS_ACCOUNT_ID}.dkr.ecr.${AWS_DEFAULT_REGION}.amazonaws.com/${IMAGE_REPO_NAME}"
     }
@@ -23,7 +23,7 @@ pipeline {
             steps {
                 script {
  
-                    git branch: 'master', url: 'https://github.com/clement2019/docker_repo1_ecr.git' 
+                    git branch: 'master', url: 'https://github.com/Oluchi29/docker_repo1_ecr.git' 
                 }
             }
         }
