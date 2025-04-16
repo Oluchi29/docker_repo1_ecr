@@ -3,7 +3,7 @@ pipeline {
     environment {
         AWS_ACCOUNT_ID="851725600699"
         AWS_DEFAULT_REGION="us-east-1"
-        IMAGE_REPO_NAME="edeployment"
+        IMAGE_REPO_NAME="ecr-deployment"
         IMAGE_TAG="v1"
         REPOSITORY_URI = "${AWS_ACCOUNT_ID}.dkr.ecr.${AWS_DEFAULT_REGION}.amazonaws.com/${IMAGE_REPO_NAME}"
     }
